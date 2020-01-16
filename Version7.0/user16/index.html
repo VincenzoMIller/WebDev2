@@ -10,6 +10,25 @@
  -->
 
   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+      <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").show("slow", function(){
+      alert("The paragraph is now visible");
+    });
+  });
+});
+</script>
       <link href="CSS/webDev16.css" rel="stylesheet" type="text/css"> 
 
     <meta charset="utf-8">
@@ -23,21 +42,6 @@
     <!-- code obtained from https://frimmy.github.io/api-test/  -->
 
     <title>Cheesey's website</title>
-
-
-    <!-- Bootstrap core CSS -->
-
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-
- 
-
-    <!-- Custom styles for this template -->
-
-    <link rel="stylesheet" type="text/css"
-
-          href="https://fonts.googleapis.com/css?family=Lobster">
-
-    <link href="style.css" rel="stylesheet">
 
 
   </head>
@@ -77,8 +81,9 @@
 
             <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
 <li><a href="webDevUser16list.html">list</a></li>
-    <li><a href="webDevUser16faq.html">faq</a></li>
-                <li><a href="clone.html">More</a></li>
+    <li><a href="webDevUser16faq.html">Hours</a></li>
+  <li><a href="Javascript.html">Cheese</a></li>
+                <li><a href="clone.html">Extra</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -146,6 +151,10 @@
 
 
                 </div>
+    
+
+<p>cheeseys is the best!!!</p>
+
     </body>
 </html>
 <html lang="en">
@@ -154,9 +163,7 @@
 	Date Completed:11/20/2019
  -->
 <body>
-    <button type="button"
-style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:2%;margin-bottom:0%;" onClick="alert('GO To Cheesey's!');" >
-        Click Me!</button>
+
     <a href="webDevUser16_Games.html"><button>Game</button> </a>
 
 <center><p id="textChange"> My name is vin</p></center>

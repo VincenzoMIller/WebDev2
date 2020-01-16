@@ -1,20 +1,16 @@
-
-
-<html lang="en">
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
 $(document).ready(function(){
   $("button").click(function(){
-    $("#p1").css("color", "red")
-      .slideUp(2000)
-      .slideDown(2000);
+    $("div").animate({left: '1230px'});
   });
 });
-</script>
-    </head>
+</script> 
+</head>
 <body>
-     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
       <div class="container">
 
@@ -46,8 +42,9 @@ $(document).ready(function(){
             <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
 <li><a href="webDevUser16list.html">list</a></li>
     <li><a href="webDevUser16faq.html">Hours</a></li>
-                 <li><a href="Javascript.html">Cheese</a></li>
+               <li><a href="Javascript.html">Cheese</a></li>
                 <li><a href="clone.html">Extra</a></li>
+                
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -55,22 +52,18 @@ $(document).ready(function(){
       </div>
 
     </div>
-<h2> Top 5 places</h2>
- <table>
- <thead><tr><th>Rank</th></tr></thead>
- <tr><td>1</td><td>Cheesey's</td></tr>
- <tr><td>2</td><td>Cheesey's</td>></tr>
- <tr><td>4</td><td>Cheesey's</td></tr>
- <tr><td>5</td><td>Cheesey's</td></tr>
- <img src="images/webDevUser16.jpg" alt="cheesey's">
-    </table>
-<div id="footer">
-<p>
-A similar opinion can be found no where 
-</p>
-</div>
-<p id="p1">Cheeseys is good!!</p>
 
-<button>Click me</button>
+<button>Start Animation</button>
+
+<p>Watch the cheese move!</p>
+
+ <div style="background:#98bf21;height:100px;width:200px;position:absolute;"></div>
+    <h2>Date and time now</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 </body>
 </html>
